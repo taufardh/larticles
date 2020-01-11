@@ -24,10 +24,10 @@ Route::get('articles', 'ArticleController@index');
 Route::get('article/{id}', 'ArticleController@show');
 
 //create article
-Route::post('articles', 'ArticleController@store');
+Route::post('article', 'ArticleController@store');
 
 //update article
-Route::put('articles', 'ArticleController@store');
+Route::put('article', 'ArticleController@store');
 
 //delete article
-Route::delete('articles', 'ArticleController@destroy');
+Route::delete('article/{id}', 'ArticleController@destroy');
